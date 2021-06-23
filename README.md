@@ -5,4 +5,4 @@ Requiremnts: kubectl in path and is able to talk to local kubernetes cluster
 
 run ./build.sh and local-image-service(NodePort) - will be up in a matter of seconds.
 
-
+Might need to add "insecure-registries":["x.x.x.x:5000"] in /etc/docker/daemon.json, in case container registry is not running locally - where x.x.x.x is the container registry ip. 
