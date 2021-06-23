@@ -1,0 +1,1 @@
+# jib-k8s-private-registry
