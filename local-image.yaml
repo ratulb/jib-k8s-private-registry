@@ -6,5 +6,6 @@ spec:
   containers:
   - name: local-image-container
     image: localhost:5000/local-image
+    imagePullPolicy: Always
 
 
