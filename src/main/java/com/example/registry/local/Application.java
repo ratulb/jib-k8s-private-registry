@@ -17,7 +17,6 @@ public class Application {
 	public static void main(String[] args) {
 		System.out.println("Starting application...");
 		SpringApplication.run(Application.class, args);
-		System.out.println("Application startd...now");
 	}
 
         @GetMapping("/greeting")
@@ -25,6 +24,10 @@ public class Application {
            defaultValue="World") String name) {
            String message = String.format(template, counter.incrementAndGet()) + " " + name;
            return message;
+        }
+	@GetMapping("/")
+        public String index() {
+           return "Hello there";
         }
 
 }
